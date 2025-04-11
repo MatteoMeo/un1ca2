@@ -1,0 +1,31 @@
+From eba6ae8362e0a1aac58f9438450477c9780ace90 Mon Sep 17 00:00:00 2001
+From: BlackMesa123 <giangrecosalvo9@gmail.com>
+Date: Sun, 2 Jun 2024 13:12:43 +0200
+Subject: [PATCH] Disable dual speaker support
+
+---
+diff --git a/smali_classes5/com/samsung/android/audio/Rune.smali b/smali_classes5/com/samsung/android/audio/Rune.smali
+index 1b69e907..16db4236 100644
+--- a/smali_classes5/com/samsung/android/audio/Rune.smali
++++ b/smali_classes5/com/samsung/android/audio/Rune.smali
+@@ -264,7 +264,7 @@
+ 
+ .field public static final blacklist SEC_AUDIO_SUPPORT_ACH_RINGTONE:Z
+ 
+-.field public static final blacklist SEC_AUDIO_SUPPORT_DUAL_SPEAKER:Z = true
++.field public static final blacklist SEC_AUDIO_SUPPORT_DUAL_SPEAKER:Z = false
+ 
+ .field public static final blacklist SEC_AUDIO_SUPPORT_FACTORY_INTERPOSER:Z = false
+ 
+@@ -333,7 +333,7 @@
+ .method static constructor blacklist <clinit>()V
+     .locals 8
+ 
+-    const-string v0, "2"
++    const-string v0, "1"
+ 
+     invoke-static {v0}, Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;
+ 
+-- 
+2.46.0
+

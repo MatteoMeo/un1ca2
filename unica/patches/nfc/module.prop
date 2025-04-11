@@ -1,0 +1,4 @@
+id=nfc
+name=NFC blobs
+author=ExtremeXT
+description=Replaces source NFC blobs with SLSI ones if necessary.

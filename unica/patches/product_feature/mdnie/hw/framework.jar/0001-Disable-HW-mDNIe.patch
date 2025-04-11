@@ -1,0 +1,22 @@
+From 1022fca4cec6daca3574fc6b88acd7aeb67974db Mon Sep 17 00:00:00 2001
+From: BlackMesa123 <giangrecosalvo9@gmail.com>
+Date: Wed, 6 Dec 2023 17:31:51 +0100
+Subject: [PATCH] Disable HW mDNIe
+
+---
+diff --git a/smali_classes4/android/view/accessibility/A11yRune.smali b/smali_classes4/android/view/accessibility/A11yRune.smali
+index f3125273..fedda441 100644
+--- a/smali_classes4/android/view/accessibility/A11yRune.smali
++++ b/smali_classes4/android/view/accessibility/A11yRune.smali
+@@ -18,7 +18,7 @@
+ 
+ .field public static final blacklist A11Y_COLOR_BOOL_SUPPORT_DMC_COLORWEAKNESS:Z
+ 
+-.field public static final blacklist A11Y_COLOR_BOOL_SUPPORT_MDNIE_HW:Z = true
++.field public static final blacklist A11Y_COLOR_BOOL_SUPPORT_MDNIE_HW:Z = false
+ 
+ .field public static final blacklist A11Y_COLOR_BOOL_SUPPORT_MDNIE_SW:Z = false
+ 
+-- 
+2.46.0
+

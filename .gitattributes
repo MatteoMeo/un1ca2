@@ -1,0 +1,28 @@
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text eol=lf
+
+# Denote all files that are truly binary and should not be modified.
+
+# Common file extensions
+*.apk binary
+*.apex binary
+*.bin binary
+*.so binary
+*.jar binary
+*.pk8 binary
+*.ogg binary
+*.ico binary
+*.jpg binary
+*.png binary
+*.qmg binary
+*.webp binary
+
+# ROM-specific prebuilt blobs
+unica/flashable-zip/updater binary
+unica/mods/pif/system/bin/rezetprop binary
+unica/mods/wallpaper/** binary
+unica/patches/exynosation/system/** binary
+unica/patches/desixtification/system/** binary
+unica/patches/product_feature/fingerprint/optical_fod/system/** binary
+unica/patches/product_feature/resolution/system/** binary
+unica/patches/vndk/30/** binary
